@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreakingNews</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <div class="mainnav flex container">
+            <a href="" class="comlogo">
+                <img src="img/—Pngtree—vector color block breaking news_4275286.png" class="logoimg" alt="">
+            </a>
+
+            <div class="navlink">
+                <ul class="flex">
+                    <li class=" hoverlink navitem" id="science"  onclick="onNavItemClick('science')">Science</li>
+                    <li class=" hoverlink navitem"  id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class=" hoverlink navitem" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class=" hoverlink navitem" id="NaviMumbai" onclick="onNavItemClick('NaviMumbai')">NaviMumbai</li>
+                    <li class=" hoverlink navitem" id="weather" onclick="onNavItemClick('weather')">Weather</li>
+                </ul>
+            </div>
+            <div class="searchbar  flex ">
+                <input  id="searchtext" class="newsinput" type="text" placeholder="e.g. Ronaldo">
+                <button class="searchbtn" id="searchbtn"> <b>Search</b> </button>
+            </div>
+
+        </div>
+    </nav>
+    <main>
+        <div class="cards-container  flex container" id="cards-container">
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+
+        <div class="card">
+            <div class="cardheader">
+                <img src="https://via.placeholder.com/400x200" alt="newimg" class="news-img" id="news-img">
+            </div>
+            <div class="cardcontent">
+                <h3 id="news-title">this is the title</h3>
+                <h6 id="news-source">End gadget 5/3/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Temporibus, ipsum?</p>
+            </div>
+        </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
